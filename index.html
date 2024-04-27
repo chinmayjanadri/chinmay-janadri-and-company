@@ -118,14 +118,14 @@
               <div class="form__first-row">
                 <input
                   type="text"
-                  class="input"
+                  class="input first-name"
                   name="First Name"
                   placeholder="First Name"
                 />
                 <input
                   type="text"
                   name="Last Name"
-                  class="input"
+                  class="input last-name"
                   placeholder="Last Name"
                 />
               </div>
@@ -133,7 +133,7 @@
                 <input
                   type="email"
                   name="Email"
-                  class="input"
+                  class="input email"
                   placeholder="Email"
                 />
               </div>
@@ -210,5 +210,18 @@
         </div>
       </div>
     </footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "qCal4ctfX-_rystIG",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
